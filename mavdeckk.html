@@ -1,0 +1,49 @@
+<?php include('login.php') ?>
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: mavdeckk.html');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: mavdeckk.html");
+  }
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<link rel="stylesheet" href="larry1.css" >
+</head>
+<body class="mavdeckback">
+<div class="container">
+<img src="morko.png" class="watermark">
+ <div class="mavhead">
+<h1>Maverick's Deck</h1>
+<h3 class="warning">please enter login credentials </h3>
+</div>
+
+<div class="login">
+
+<form method="post" action="login.php" autocomplete="off">
+<?php include('errors.php') ?>
+<label>Username <br></label>
+<input type="text" name="uname" required="required">
+<br><br>
+	
+	 
+<label>Password <br></label>
+<input type="password" name="pword" required="required">
+<button type="submit" name="login" class="taskbutton">Login</button>
+
+</form>
+</div>
+<div class="mavhead"><span> <a href="#">Forgot Username or Password? </a> </span> </div>
+</div>
+
+</body>
+</html>

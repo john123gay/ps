@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8" />
+<title><tesing 1 2 3 </title>
+<link rel="stylesheet" href="larry1.css" >
+<link rel="stylesheet" href="showslide.css">
+
+
+
+</head>
+<body onload="start()">
+
+
+<div  >
+ <img src="morko.png" class="banner"/>
+</div>
+<div class="tab center card">
+  
+  <button class="tablinks" onclick="showTab(event, 'Home')"id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="showTab(event, 'About')">About</button>
+  <button class="tablinks" onclick="showTab(event, 'Mission')">Mission Statement</button>
+  <button class="tablinks" onclick="showTab(event, 'Contact')">Contact Us</button>
+  <button class="tablinks" onclick="showTab(event, 'Pictures')">Our Team</button>
+  <a href="warning.html"><button > Maverick's Deck</button> </a>
+</div>
+<div >
+   <ul class="sidenav">
+    <li onclick="showTab(event, 'Home')"id="defaultOpen"><a href="#home1">Home</a></li>
+    <li onclick="showTab(event, 'About')"><a href="#about1">About</a></li>
+    <li onclick="showTab(event, 'Mission')"><a href="#mission1">Mission Statement</a></li>
+    <li onclick="showTab(event, 'Contact')"><a href="#contact1">Contact Us</a></li>
+    <li onclick="showTab(event, 'Pictures')"><a href="#team1">Our Team</a></li>
+    <li><a href="warning.html"> Maverick's Deck </a> </li>
+   </ul>
+</div>
+
+<div id="Home" class="tabcontent">
+  <div id="home1"></div>
+  <br />
+  <h3 class="center" >Welcome</h3>
+  <p>Welcome to MPA LLC.</p>
+    
+<div class="slideshow-container card">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="elchacal.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="pablo (5).png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="slide5.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
+
+<div onload="loadAbout()" id="About" class="tabcontent">
+  <div id="about1"></div>
+  <br />
+  <h3>About</h3>
+  <p id="about"> </p> 
+</div>
+
+<div id="Mission" class="tabcontent">
+  <div id="mission1"></div>
+  <br />
+  <h3 >Mission Statement</h3>
+  <p id="mission"></p>
+  <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+</div>
+<div id="Contact" class="tabcontent">
+<div id="contact1"></div>
+<br />
+<h3 >Contact us</h3>
+<p id="contact"></p>
+  <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+</div>
+
+<div id="Pictures" class="tabcontent">
+  <div  id="team1"></div>
+  <br />
+  <h3 >Team</h3>
+  <p id="team"></p>
+  <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+</div>
+<footer> 
+  <div class="footer">
+	 <br />
+	<a href="#" class="fa fa-facebook"> </a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-snapchat-ghost"></a>
+    <a href="#" class="fa fa-instagram"></a>
+	 <br />
+	 <h4>Copyright &copy; 2012-2018 MPA LLC  all rights reserved</h4>
+  </div>
+</footer>
+<script src="showtab.js">
+</script>
+<script src="slideski.js"> </script>
+<script src="loadTheText.js"> </script>
+<script src="scroll.js"></script>
+</body>
+</html>
+

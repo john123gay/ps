@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title></title>
+<link rel="stylesheet" href="larry1.css" >
+</head>
+<body>
+<div class="tab">
+<button class="tablinks" onclick="showTab(event, 'bio')"id="defaultOpen">My Bio</button>
+<button class="tablinks" onclick="showTab(event, 'time')">Time card</button>
+<button class="tablinks" onclick="showTab(event, 'account')">My Accounts</button>
+<button class="tablinks" onclick="showTab(event, 'info')">Employee Info </button> 
+<button class="tablinks" onclick="showTab(event, 'caseload')">Employee Caseload</button>
+<button class="tablinks">Logout </button>
+</div>
+<div class="tabcontent" id="bio">
+<h1>Welcome Loser!</h1> 
+<p>Date: </p>
+<p>Picture:</p>
+<p>Info:</p>
+</div>
+<div class="tabcontent" id="time">
+<h1> Time Card</h1>
+<p>Time info:</p>
+</div>
+<div class="tabcontent" id="account">
+<h1>My Accounts</h1>
+<p>Info about accounts:</p>
+</div>
+<div class="tabcontent" id="info">
+<h1>Employee Info</h1>
+<p>Admin Only!</p>
+<br /> <br /> 
+<button class="taskbutton">Show Employees </button>
+</div>
+<div class="tabcontent" id="caseload">
+<h1>Employee Caseload</h1>
+<p>Admin Only!</p>
+<br /> <br />
+<button class="taskbutton">Show All Accounts </button>
+</div>
+<script src="showtab.js"></script>
+</body>
+</html>
